@@ -100,11 +100,11 @@
         padding: 20px 20px;
     }
     .contact-us__btn {
-        width: 30%;
-        height: 8vw;
-        margin-top: 50px;
+        width: 50%;
+        height: 8vh;
+        margin: 50px auto 0;
     }
     .contact-us__btn p{
-        font-size: 80%;
+        font-size: 90%;
     }
 }

@@ -230,3 +230,9 @@
             margin-top: 50px;
         }
     }
+@media(max-width: 520px){
+    .get-started__btn{
+        width: 90%;
+        margin: 50px auto 0;
+    }
+}
