@@ -1,6 +1,11 @@
 header {
     padding: 35px 0;
 }
+@media (max-width: 1000px){
+    header{
+        padding: 0;
+    }
+}
 header .nav-menu {
     display: flex;
     justify-content: space-between;
