@@ -54,7 +54,9 @@
         flex-wrap: wrap;
         letter-spacing: -0.657px;
     }
-
+.get-started__btn-container:hover{
+    text-decoration: none;
+}
     .get-started__btn {
         display: flex;
         background-color: rgba(84, 84, 212, 1);
@@ -74,7 +76,7 @@
         margin: 10px 0;
     }
 
-    .get-started__btn div {
+    .get-started__btn {
         margin-left: -12px;
     }
 
