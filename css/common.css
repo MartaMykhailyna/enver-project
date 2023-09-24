@@ -19,7 +19,7 @@ img {
 
     /*    slider pagination    */
 
-    --swiper-pagination-color: rgba(84, 84, 212, 1);;
+    --swiper-pagination-color: rgba(84, 84, 212, 1);
     --swiper-pagination-bullet-size: 8px;
     --swiper-pagination-bullet-width: 8px;
     --swiper-pagination-bullet-height: 8px;
@@ -88,24 +88,14 @@ p {
     padding: 10px 20px;
     width: 40px;
     height: 40px;
-    background-color: tomato;
-    color: #fff;
+    background-color: rgba(84, 84, 212, 1);
+    /* color: #fff; */
     border: none;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
     justify-content: center;
     align-items: center;
-}
-
-.btn__to-top{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: tomato;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
 }
 
 @media (max-width: 1200px) {
@@ -135,5 +125,10 @@ p {
 @media (max-width: 888px) {
     .landing {
         padding: 20px;
+    }
+}
+@media (max-width: 768px){
+    #scrollToTopButton{
+        right: 7%;
     }
 }
