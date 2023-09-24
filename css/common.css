@@ -1,22 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     display: block;
     width: 100%;
     height: auto;
 }
-:root{
+
+:root {
     --main-landing-color: #19191B;
     --heading-text-color: rgba(255, 255, 255, 1);
     --second-text-color: rgba(255, 255, 255, 0.7);
     --heading-font: 'Nunito Sans', sans-serif;;
     --other-font: Graphik, sans-serif;
-/*    slider pagination    */
 
-    --swiper-pagination-color:  rgba(84, 84, 212, 1);;
+    /*    slider pagination    */
+
+    --swiper-pagination-color: rgba(84, 84, 212, 1);;
     --swiper-pagination-bullet-size: 8px;
     --swiper-pagination-bullet-width: 8px;
     --swiper-pagination-bullet-height: 8px;
@@ -25,48 +28,102 @@ img{
     --swiper-pagination-bullet-opacity: 1;
     --swiper-pagination-bullet-horizontal-gap: 4px;
     --swiper-pagination-bullet-vertical-gap: 6px;
+    --swiper-pagination-bottom: 10%;
 }
-body{
+@media(max-width: 1171px){
+    :root{
+        --swiper-pagination-bottom: 10%;
+    }
+}
+@media(max-width: 660px){
+    :root{
+        --swiper-pagination-bottom: 15%;
+    }
+}
+@media(max-width: 639px){
+    :root{
+        --swiper-pagination-bottom: 15%;
+    }
+}
+
+body {
     min-width: 375px;
     max-width: 1440px;
     height: auto;
     overflow-x: hidden;
 }
-.landing{
+
+.landing {
     width: 100%;
     height: auto;
     background-color: var(--main-landing-color);
     padding: 0 90px;
     overflow-x: hidden;
 }
-h1{
+
+h1 {
     font-family: var(--heading-font);
     color: var(--heading-text-color);
 }
-h2{
+
+h2 {
     font-family: var(--other-font);
     color: var(--heading-text-color);
-}h3{
+}
+
+h3 {
     font-family: var(--heading-font);
     color: var(--heading-text-color);
 }
-p{
+
+p {
     font-family: var(--other-font);
     color: var(--second-text-color);
 }
-@media(max-width: 1200px){
-    .landing{
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 10px 20px;
+    width: 40px;
+    height: 40px;
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__to-top{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: tomato;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+@media (max-width: 1200px) {
+    .landing {
         padding: 0 50px;
     }
 }
-@media(max-width: 768px){
-    h2{
+
+@media (max-width: 768px) {
+    h2 {
         font-size: 36px;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
-    .landing{
+
+    .landing {
         width: 100%;
         height: auto;
         background-color: var(--main-landing-color);
@@ -74,36 +131,9 @@ p{
         overflow-x: hidden;
     }
 }
-@media (max-width: 888px){
-    .landing{
+
+@media (max-width: 888px) {
+    .landing {
         padding: 20px;
     }
-}
-.swiper-pagination-bullet {
-    background-color: blue;
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-}
-
-/* change color of next 2 bullets in sequence to white*/
-
-.swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-next-next {
-    /*background-color: white;*/
-    border: none;
-        background: #121213;
-        opacity: 0.7;
-        border-radius: 50%;
-        margin-right: 1.75rem;
-        cursor: pointer;
-        transition: all 0.5s;
-        width: 1lh;
-        height: 1lh;
-        flex-shrink: 0;
-}
-
-/* change color of previous bullet to white*/
-
-.swiper-pagination-bullet-active-prev {
-    background-color:   rgba(84, 84, 212, 1);
 }

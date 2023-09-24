@@ -34,15 +34,11 @@ Object.assign(swiperEl, {
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        "@1.00": {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        "@1.10": {
+       661 : {    ////"@1.79"
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        "@1.50": {
+        1170: {
             slidesPerView: 3,
             spaceBetween: 90,
         },
