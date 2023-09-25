@@ -47,18 +47,20 @@ img {
 }
 
 body {
-    min-width: 375px;
-    max-width: 1440px;
+    /* min-width: 375px;
+    max-width: 100%; */
     height: auto;
     overflow-x: hidden;
+    background-color: var(--main-landing-color);
 }
 
 .landing {
-    width: 100%;
+    max-width: 1640px;
+    /* width: 100%; */
     height: auto;
-    background-color: var(--main-landing-color);
     padding: 0 90px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    margin: 0 auto;
 }
 
 h1 {
@@ -114,7 +116,7 @@ p {
     }
 
     .landing {
-        width: 100%;
+        /* width: 100%; */
         height: auto;
         background-color: var(--main-landing-color);
         padding: 0 15px;
