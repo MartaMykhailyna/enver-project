@@ -18,7 +18,7 @@ header .nav-menu {
     align-items: center;
 }
 
-.logo img {
+.logo-icon-container {
     max-width: 40px;
     max-height: 40px;
 }
@@ -81,4 +81,19 @@ header .nav-menu {
 }
 .header-btn__contact-us:hover{
     color: rgba(255, 255, 255, 1);
+}
+@media (min-width: 1700px){
+    .logo p {
+        font-size: 38px;
+        line-height: 39px;
+
+    }
+    .header-btn__contact-us {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .header__nav-menu li {
+        font-size: 21px;
+    }
 }

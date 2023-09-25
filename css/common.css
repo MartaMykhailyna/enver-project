@@ -45,21 +45,28 @@ img {
         --swiper-pagination-bottom: 15%;
     }
 }
+@media(min-width: 1700px){
+    :root{
+        --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 12px;
+    }
+}
 
 body {
     /* min-width: 375px;
     max-width: 100%; */
     height: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color: var(--main-landing-color);
 }
 
 .landing {
-    max-width: 1640px;
+    max-width: 1800px;
     /* width: 100%; */
     height: auto;
     padding: 0 90px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     margin: 0 auto;
 }
 
@@ -71,16 +78,19 @@ h1 {
 h2 {
     font-family: var(--other-font);
     color: var(--heading-text-color);
+    font-size: 60px;
 }
 
 h3 {
     font-family: var(--heading-font);
     color: var(--heading-text-color);
+    font-size: 28px;
 }
 
 p {
     font-family: var(--other-font);
     color: var(--second-text-color);
+    font-size: 21px;
 }
 #scrollToTopButton {
     display: none;
@@ -103,6 +113,14 @@ p {
 @media (max-width: 1200px) {
     .landing {
         padding: 0 50px;
+    }
+}
+@media (max-width: 1000px) {
+    h2{
+        font-size: 36px;
+    }
+    p{
+        font-size: 16px;
     }
 }
 
@@ -132,5 +150,16 @@ p {
 @media (max-width: 768px){
     #scrollToTopButton{
         right: 7%;
+    }
+}
+@media (min-width: 1700px){
+    h2{
+        font-size: 73px;
+    }
+    h3{
+        font-size: 38px;
+    }
+    p{
+        font-size: 31px;
     }
 }

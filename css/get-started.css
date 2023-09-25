@@ -46,7 +46,7 @@
     }
 
     .get-started p {
-        font-size: 21px;
+        /* font-size: 21px; */
         line-height: 39px;
         margin-top: 40px;
         width: 100%;
@@ -59,16 +59,16 @@
         display: flex;
         background-color: rgba(84, 84, 212, 1);
         border-radius: 4px;
-        width: 204px;
+        width: 214px;
         height: auto;
-        max-height: 58px;
+        height: 58px; 
         margin-top: 70px;
         align-items: center;
         padding: 0 25px;
         /* margin-left: -12px; */
         justify-content: center;
         min-width: 144px;
-        max-width: 204px;
+        /* max-width: 204px; */
     }
     .get-started__btn{
         width: 100%;
@@ -78,7 +78,7 @@
     }
     .get-started__btn p {
         color: var(--heading-text-color);
-        font-size: 20px;
+        /* font-size: 21px; */
         margin: 10px 0;
     }
     .get-started__btn-container:hover{
@@ -181,7 +181,7 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        font-size: 16px;
+        /* font-size: 16px; */
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
@@ -189,7 +189,7 @@
     .get-started__btn-container{
         /* min-width: 144px;
         max-width: 204px; */
-        width: 100%;
+        width: 214px;
         height: 50%;
         max-height: 58px;
         margin-top: 45px;
@@ -219,7 +219,7 @@
         position: relative;
         width: 80%;
         height: auto;
-        margin: 50px auto;
+        margin: 10px auto;
     }
     .vector-triangles{
         right: 92%;
@@ -229,9 +229,9 @@
         font-size: 42px;
     }
 
-    .get-started p {
+    /* .get-started p {
         font-size: 16px;
-    }
+    } */
 }
     @media (max-width: 888px){
         .get-started{
@@ -244,7 +244,38 @@
         margin-bottom: -0px;
     }
     .get-started__btn-container{
-        width: 90%;
+        width: 50%;
         margin: 50px auto 0;
+    }
+}
+@media(max-width: 474px){
+    .get-started__btn-container{
+        width: 60%;
+        margin: 50px auto 0;
+    }
+    .get-started__btn-container p{
+       font-size: 14px;
+    }
+}
+@media (min-width: 1700px){
+    .get-started h1{
+        font-size: 90px;
+    }
+    .get-started__text {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        width: 45%;
+        height: auto;
+    }
+
+    .get-started__btn-container {
+        height: 80px;
+        padding: 0 65px;
+        width: 354px;
+    }
+    .get-started__btn p {
+        font-size: 28px;
+        margin: 10px 0;
     }
 }

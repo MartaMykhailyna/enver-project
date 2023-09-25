@@ -1,6 +1,6 @@
 .slider-section {
     position: relative;
-    margin: 150px auto 0;
+    margin: 50px auto 0;
 }
 .slider__gradient-1 {
     position: absolute;
@@ -15,7 +15,7 @@
 }
 .slider-section h2 {
     font-family: var(--heading-font);
-    font-size: 58px;
+    /* font-size: 58px; */
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -177,4 +177,25 @@ swiper-slide img {
         top: 13%;
         width: 8%;
     }
+}
+@media (min-width: 1700px){
+    .slider-section{
+        margin-top: 100px;
+    }
+    .slider__slider-rectangle {
+        width: 550px; /* 350px*/
+        height: 351px;
+        border-radius: 14px;
+        background: #1E1E20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slider__slider-rectangle img {
+        width: 430px;
+        height: 320px;
+        border-radius: 12px;
+    }
+    
 }
