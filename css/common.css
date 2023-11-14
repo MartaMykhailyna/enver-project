@@ -55,15 +55,12 @@ img {
 
 body {
      min-width: 375px;
-    /*max-width: 1800px;*/
     height: auto;
-    /* overflow-x: hidden; */
     background-color: var(--main-landing-color);
 }
 
 .landing {
-    /*max-width: 1800px;*/
-     width: 100%;
+    width: 100%;
     height: auto;
     padding: 0 90px;
     overflow-x: hidden;
