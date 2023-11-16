@@ -100,7 +100,7 @@ img {
 /* /Fade in up */
 
 body {
-     min-width: 375px;
+    min-width: 375px;
     height: auto;
     background-color: var(--main-landing-color);
 }

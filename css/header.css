@@ -6,6 +6,25 @@ header {
         padding: 0;
     }
 }
+header {
+    padding: 10px 90px;
+    color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: auto;
+    background-color: transparent;
+}
+header.active{
+background-color:  rgba(30, 30, 32, 0.9);
+    /*-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);*/
+    /*-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);*/
+    /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);*/
+}
+
 header .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -107,6 +126,9 @@ header .nav-menu {
 }
 .header-btn__contact-us:hover{
     color: rgba(255, 255, 255, 1);
+    background: linear-gradient(150deg, rgba(251, 168, 28, 0.11) 0%, rgba(224, 86, 136, 0.06) 100%);
+    transition: background-color .1s ease-in;
+    border: none;
 }
 @media (min-width: 1700px){
     .logo p {

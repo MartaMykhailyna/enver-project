@@ -63,6 +63,7 @@
 .services-list__columns-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border: 2px solid green;
 }
 .services-list__column {
     display: flex;
@@ -70,11 +71,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 350px;
     margin: 24px;
     margin-bottom: 40px;
-    /*width: 292px;*/
+    /*border: 2px solid yellow;*/
+    z-index: 10000;
 }
-
+.services-list__column:hover{
+    /*background-color: #3a3a90;*/
+    background: linear-gradient(120deg,#5454D435 10%,#FBA81C0C 50%);
+    border-bottom-right-radius: 7%;
+    border-top-left-radius: 7%;
+    border: 2px solid #5454D435;
+    /*border-radius: 5%;*/
+}
 .services-list__column-img-container {
     width: 69px;
     height: 69px;
