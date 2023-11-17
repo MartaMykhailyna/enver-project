@@ -49,7 +49,7 @@ form textarea{
   width: 100%;
   margin: 20px auto;
   background-color: #1E1E20;
-  color: var(--second-text-color)
+  color: var(--second-text-color);
 }
   .field {
     position: relative;
@@ -124,6 +124,14 @@ form textarea{
     border: none;
     outline: none;
     font-size: 16px;
+  }
+  select{
+    width: 100%;
+    background-color: #1E1E20;
+    color: var(--second-text-color);
+  }
+  select.selected{
+    border: yellow;
   }
 .container-contact100-form-btn {
   display: -webkit-box;
