@@ -11,7 +11,7 @@ img {
 }
 
 :root {
-    --main-landing-color: #19191B;
+    --main-landing-color: rgb(25, 25, 27);
     --heading-text-color: rgba(255, 255, 255, 1);
     --second-text-color: rgba(255, 255, 255, 0.7);
     --heading-font: 'Nunito Sans', sans-serif;;
